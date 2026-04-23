@@ -9,7 +9,7 @@ public class MultiTimerConsole {
         new Thread(() -> timerA.run(), "Hilo-A").start();
 
         new Thread(() -> timerB.run(), "Hilo-B").start();
-        //     new Thread(() -> timerC.run(), "Hilo-C").start();
+      //new Thread(() -> timerC.run(), "Hilo-C").start();
         
         new Thread(timerC::run, "Hilo-C").start();
 
